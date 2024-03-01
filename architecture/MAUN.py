@@ -172,7 +172,7 @@ class CS_MSA(nn.Module):
 
         return finalout
         
-class CHSAB(nn.Module):
+class CSAB(nn.Module):
     def __init__(
             self,
             dim,
@@ -221,19 +221,19 @@ class FeedForward(nn.Module):
         out = self.net(x.permute(0, 3, 1, 2).contiguous())
         return out.permute(0, 2, 3, 1).contiguous()
         
-# cross phase transformer layer
-class CPTL(nn.Module):
+# cross stage transformer layer
+class CSFormer(nn.Module):
     def __init__(self, in_dim=28, out_dim=28, dim=28):
-        super(CPTL, self).__init__()
+        super(CSFormer, self).__init__()
         self.dim = dim
         #self.scales = len(num_blocks)
         dim_scale = dim
         # Input projection
         self.embedding = nn.Conv2d(in_dim, dim_scale, 3, 1, 1, bias=False)
           
-        self.CP_MSA = CHSAB(dim=dim_scale, num_blocks=1, dim_head=dim, heads=dim_scale // dim)
-        self.CP_MSA2 = CHSAB(dim=dim_scale, num_blocks=1, dim_head=dim, heads=dim_scale // dim)
-        self.CP_MSA4 = CHSAB(dim=dim_scale, num_blocks=1, dim_head=dim, heads=dim_scale // dim)
+        self.CS_MSA = CSAB(dim=dim_scale, num_blocks=1, dim_head=dim, heads=dim_scale // dim)
+        self.CS_MSA2 = CSAB(dim=dim_scale, num_blocks=1, dim_head=dim, heads=dim_scale // dim)
+        self.CS_MSA4 = CSAB(dim=dim_scale, num_blocks=1, dim_head=dim, heads=dim_scale // dim)
 
         self.fusion = nn.Conv2d(dim_scale*2,dim_scale,kernel_size=1,bias=False)
         self.fusion2 = nn.Conv2d(dim_scale*2,dim_scale,kernel_size=1,bias=False)
@@ -283,15 +283,15 @@ class CPTL(nn.Module):
         pfea2 = self.down3(pfea)
         pfea4 = self.down4(pfea2)
         
-        fea4 = self.CP_MSA4(fea4,pfea4)
+        fea4 = self.CS_MSA4(fea4,pfea4)
         fea4 = self.up1(fea4)
         fea2 = self.fusion2(torch.cat([fea2,fea4],dim=1))
         
-        fea2 = self.CP_MSA2(fea2,pfea2)
+        fea2 = self.CS_MSA2(fea2,pfea2)
         fea2 = self.up2(fea2)
 
         fea = self.fusion(torch.cat([fea,fea2],dim=1))
-        out = self.CP_MSA(fea,pfea)
+        out = self.CS_MSA(fea,pfea)
 
         # Mapping
         out = self.mapping(out) + x
@@ -329,7 +329,7 @@ class MAUN(nn.Module):
         self.CAs = nn.ModuleList([])      
         for _ in range(num_iterations):
             self.denoisers.append(
-                CPTL(in_dim=28, out_dim=28, dim=28),
+                CSFormer(in_dim=28, out_dim=28, dim=28),
             )
             self.CAs.append(
             CA(28),
@@ -361,7 +361,7 @@ class MAUN(nn.Module):
         else:
             Phi, Phi_s = input_mask
 
-        y = y.squeeze(dim=0)
+        # y = y.squeeze(dim=0)
         x, alphas = self.initial(y, Phi)
           
         sp = x # start point
