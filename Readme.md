@@ -11,7 +11,7 @@ Published in IEEE/CAA Journal of Automatica Sinica 24
  - [ ] scikit-image = 0.17.2
 
 #### Training :<br>
-- [ ] Run "python train.py --template MAUN
+- [ ] Run "python train.py --template MAUN --outf ./exp/maun/ --method maun_24stg 
 
 #### Testing :<br>
 - [ ] Run "python test.py --template MAUN--outf ./exp/Visual/ --method MAUN --pretrained_model_path ./Pretrained_Model/MAUN.pth" to reconstruct the 3D HSI from compressive measurement.
