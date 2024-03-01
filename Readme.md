@@ -20,7 +20,7 @@ Published in IEEE/CAA Journal of Automatica Sinica 24
 - [ ] Then run  Cal_quality_assessment.m  to caculate the PSNR and SSIM of output HSIs.
 
 #### Experiment results :<br>
- Model Zoom-https://pan.baidu.com/s/13PCmWgXiWHiH8wVgHOYa4A?pwd=kp5t   code: kp5t
+ [Model Zoom](https://pan.baidu.com/s/13PCmWgXiWHiH8wVgHOYa4A?pwd=kp5t)
  
  Simulation results:
  
