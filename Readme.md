@@ -20,11 +20,9 @@ Published in IEEE/CAA Journal of Automatica Sinica 24
 - [ ] Then run  Cal_quality_assessment.m  to caculate the PSNR and SSIM of output HSIs.
 
 #### Experiment results :<br>
- [Model Zoom](https://pan.baidu.com/s/13PCmWgXiWHiH8wVgHOYa4A?pwd=kp5t)
- 
- Simulation results:
- 
- Real results:
+ [Model zoom]()
+ [Simulation results](https://pan.baidu.com/s/13PCmWgXiWHiH8wVgHOYa4A?pwd=kp5t)
+ [Real results]()
 
 #### Acknowledgements :<br>
 This work's implementation is based on "A Toolbox for Spectral Compressive Imaging"  
