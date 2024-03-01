@@ -19,4 +19,13 @@ Published in IEEE/CAA Journal of Automatica Sinica 24
 - [ ] Then run  Cal_quality_assessment.m  to caculate the PSNR and SSIM of output HSIs.
 
 #### Acknowledgements :<br>
-This work's implementation is based on "A Toolbox for Spectral Compressive Imaging"  https://github.com/caiyuanhao1998/MST
+This work's implementation is based on 
+"A Toolbox for Spectral Compressive Imaging"  https://github.com/caiyuanhao1998/MST
+
+@inproceedings{mst,
+  title={Mask-guided Spectral-wise Transformer for Efficient Hyperspectral Image Reconstruction},
+  author={Yuanhao Cai and Jing Lin and Xiaowan Hu and Haoqian Wang and Xin Yuan and Yulun Zhang and Radu Timofte and Luc Van Gool},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2022}
+}
+
