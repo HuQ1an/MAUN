@@ -19,6 +19,11 @@ Published in IEEE/CAA Journal of Automatica Sinica 24
 - [ ] The test results will be saved in ./exp/Visual.
 - [ ] Then run  Cal_quality_assessment.m  to caculate the PSNR and SSIM of output HSIs.
 
+#### Experiment results :<br>
+ Model zoom:
+ Simulation results:
+ Real results:
+
 #### Acknowledgements :<br>
 This work's implementation is based on "A Toolbox for Spectral Compressive Imaging"  
 For experiment setting, dataset and visualization, you can also refer to https://github.com/caiyuanhao1998/MST
