@@ -19,6 +19,8 @@ Published in IEEE/CAA Journal of Automatica Sinica 24
 - [ ] The test results will be saved in ./exp/Visual.
 - [ ] Then run  Cal_quality_assessment.m  to caculate the PSNR and SSIM of output HSIs.
 
+#### Comparison with other SOTA methods :<br>
+
 #### Experiment results :<br>
  [Model zoom]()
  
