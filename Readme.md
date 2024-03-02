@@ -20,6 +20,7 @@ Published in IEEE/CAA Journal of Automatica Sinica 24
 - [ ] Then run  Cal_quality_assessment.m  to caculate the PSNR and SSIM of output HSIs.
 
 #### Comparison with other SOTA methods :<br>
+![image](https://github.com/HuQ1an/MAUN/assets/86952915/381df459-d776-4277-8ea0-4319273b34c3)
 
 #### Experiment results :<br>
  [Model zoom]()
