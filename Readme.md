@@ -3,13 +3,9 @@ The code of MAUN: Memory-Augmented Deep Unfolding Network for Hyperspectral Imag
 
 Published in IEEE/CAA Journal of Automatica Sinica 24
 
-#### Recommended Environment:<br>
-
- - [ ] python = 3.9.16
- - [ ] torch = 1.10.0
- - [ ] numpy = 1.23.5
- - [ ] scipy = 1.9.1
- - [ ] scikit-image = 0.17.2
+#### Comparison with other SOTA methods :<br>
+![image](https://github.com/HuQ1an/MAUN/assets/86952915/381df459-d776-4277-8ea0-4319273b34c3)
+![image](https://github.com/HuQ1an/MAUN/assets/86952915/4827666e-df9b-4552-828d-c73da91484a6)
 
 #### Training :<br>
 - [ ] Run "python train.py --template MAUN --outf ./exp/MAUN/ --method MAUN_24stg 
@@ -19,8 +15,13 @@ Published in IEEE/CAA Journal of Automatica Sinica 24
 - [ ] The test results will be saved in ./exp/Visual.
 - [ ] Then run  Cal_quality_assessment.m  to caculate the PSNR and SSIM of output HSIs.
 
-#### Comparison with other SOTA methods :<br>
-![image](https://github.com/HuQ1an/MAUN/assets/86952915/381df459-d776-4277-8ea0-4319273b34c3)
+#### Recommended Environment:<br>
+
+ - [ ] python = 3.9.16
+ - [ ] torch = 1.10.0
+ - [ ] numpy = 1.23.5
+ - [ ] scipy = 1.9.1
+ - [ ] scikit-image = 0.17.2
 
 #### Experiment results :<br>
  [Model zoom]()
