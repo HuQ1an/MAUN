@@ -24,7 +24,7 @@ Published in IEEE/CAA Journal of Automatica Sinica 24
  - [ ] scikit-image = 0.17.2
 
 #### Experiment results :<br>
- [Model zoom]()
+ [Model zoom](https://pan.baidu.com/s/1911G9IRRKDIYXYgDs2Ey2g?pwd=3kch)
  
  [Simulation results](https://pan.baidu.com/s/13PCmWgXiWHiH8wVgHOYa4A?pwd=kp5t)
  
