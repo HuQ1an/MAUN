@@ -3,19 +3,19 @@ The code of MAUN: Memory-Augmented Deep Unfolding Network for Hyperspectral Imag
 
 Published in IEEE/CAA Journal of Automatica Sinica 24
 
-#### Comparison with other SOTA methods :<br>
+## Comparison with other SOTA methods :<br>
 ![image](https://github.com/HuQ1an/MAUN/assets/86952915/381df459-d776-4277-8ea0-4319273b34c3)
 ![image](https://github.com/HuQ1an/MAUN/assets/86952915/4827666e-df9b-4552-828d-c73da91484a6)
 
-#### Training :<br>
+## Training :<br>
 - [ ] Run "python train.py --template MAUN --outf ./exp/MAUN/ --method MAUN_24stg 
 
-#### Testing :<br>
+## Testing :<br>
 - [ ] Run "python test.py --template MAUN--outf ./exp/Visual/ --method MAUN --pretrained_model_path ./Pretrained_Model/MAUN.pth" to reconstruct the 3D HSI from compressive measurement.
 - [ ] The test results will be saved in ./exp/Visual.
 - [ ] Then run  Cal_quality_assessment.m  to caculate the PSNR and SSIM of output HSIs.
 
-#### Recommended Environment:<br>
+## Recommended Environment:<br>
 
  - [ ] python = 3.9.16
  - [ ] torch = 1.10.0
@@ -23,14 +23,14 @@ Published in IEEE/CAA Journal of Automatica Sinica 24
  - [ ] scipy = 1.9.1
  - [ ] scikit-image = 0.17.2
 
-#### Experiment results :<br>
+## Experiment results :<br>
  [Model zoom](https://pan.baidu.com/s/1911G9IRRKDIYXYgDs2Ey2g?pwd=3kch)
  
  [Simulation results](https://pan.baidu.com/s/13PCmWgXiWHiH8wVgHOYa4A?pwd=kp5t)
  
  [Real results](https://pan.baidu.com/s/1mApjGHPJcR4hsgVE9gcbNg?pwd=th9g)
 
-#### Acknowledgements :<br>
+## Acknowledgements :<br>
 This work's implementation is based on "A Toolbox for Spectral Compressive Imaging"  
 For experiment setting, dataset and visualization, you can also refer to https://github.com/caiyuanhao1998/MST
 ```
@@ -41,4 +41,4 @@ For experiment setting, dataset and visualization, you can also refer to https:/
   year={2022}
 }
 ```
-#### citation :<br>
+## citation :<br>
