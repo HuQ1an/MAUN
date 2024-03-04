@@ -4,7 +4,13 @@ The code of MAUN: Memory-Augmented Deep Unfolding Network for Hyperspectral Imag
 Published in IEEE/CAA Journal of Automatica Sinica 24
 
 ## Overview :<br>
-
+We have propose a Memory-Augmented deep Unfolding Network, termed MAUN, for explainable and accurate HSI
+reconstruction. Specifically, MAUN implements a novel CNN scheme to facilitate a better extrapolation step of the fast 
+iterative shrinkage-thresholding algorithm, introducing an extra momentum incorporation step for each iteration to alleviate the
+information loss. Moreover, to exploit the high correlation of intermediate images from neighboring iterations, we customize 
+a cross-stage transformer (CSFormer) as the deep denoiser to simultaneously capture self-similarity from both in-stage and 
+cross-stage features, which is the first attempt to model the long-distance dependencies between iteration stages. Extensive
+experiments demonstrate that the proposed MAUN is superior to other state-of-the-art methods both visually and metrically.
 
 ## Comparison with other SOTA methods :<br>
 ![image](https://github.com/HuQ1an/MAUN/assets/86952915/381df459-d776-4277-8ea0-4319273b34c3)
