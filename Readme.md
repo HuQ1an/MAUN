@@ -41,7 +41,8 @@ experiments demonstrate that the proposed MAUN is superior to other state-of-the
 
 ## Citation :<br>
 
-## Contact
+## Contact :<br>
+If you have any questions, please feel free to contact me at huq1an@whu.edu.cn
 
 ## Acknowledgements :<br>
 This work's implementation is based on "A Toolbox for Spectral Compressive Imaging"  
