@@ -8,6 +8,7 @@ Published in IEEE/CAA Journal of Automatica Sinica 24
 
 ## Comparison with other SOTA methods :<br>
 ![image](https://github.com/HuQ1an/MAUN/assets/86952915/381df459-d776-4277-8ea0-4319273b34c3)
+
 ![image](https://github.com/HuQ1an/MAUN/assets/86952915/4827666e-df9b-4552-828d-c73da91484a6)
 
 ## Training :<br>
