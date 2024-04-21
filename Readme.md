@@ -50,3 +50,17 @@ For experiment setting, dataset and visualization, you can also refer to https:/
   year={2022}
 }
 ```
+
+## Citation :<br>
+```
+@article{hu2024maun,
+  title={MAUN: Memory-Augmented Deep Unfolding Network for Hyperspectral Image Reconstruction},
+  author={Hu, Qian and Ma, Jiayi and Gao, Yuan and Jiang, Junjun and Yuan, Yixuan},
+  journal={IEEE/CAA Journal of Automatica Sinica},
+  volume={11},
+  number={5},
+  pages={1139--1150},
+  year={2024},
+  publisher={IEEE}
+}
+```
